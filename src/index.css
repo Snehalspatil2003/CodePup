@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+body{
+  font-family: "poppins" , sans-serif;
+}
+
+h1 , h2 {
+  font-family: "Roboto" , sans-serif;
+}
+
+@layer utilities{
+  .gradient{
+    background: linear-gradient(-45deg , #302b63 , #00bf8f ,#1cd8d2);
+  }
+}
+
+.perspective {
+  perspective: 1200px;
+}
+
+.transform-style-preserve-3d {
+  transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+}
+
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
+
+.perspective {
+  perspective: 1200px;
+}
+.transform-style-preserve-3d {
+  transform-style: preserve-3d;
+}
+.backface-hidden {
+  backface-visibility: hidden;
+}
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
+.group:hover .rotate-y-180,
+.group:focus .rotate-y-180 {
+  transform: rotateY(180deg);
+}
