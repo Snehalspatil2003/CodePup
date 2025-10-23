@@ -2,40 +2,39 @@ import React, { useState } from "react";
 
 const faqs = [
   {
-    question: "How fast can I build a site?",
-    answer: "With CodePup.ai, most sites are scaffolded in under 5 minutes. Just describe your idea in a prompt.",
+    question: "What is CodePup.ai?",
+    answer: "CodePup.ai is an AI-powered platform that generates full-stack websites instantly from natural language prompts.",
   },
   {
-    question: "Can I export code?",
-    answer: "Yes, you get real code ready for local editing or deployment—React, Tailwind, and more.",
+    question: "Which frameworks does it support?",
+    answer: "It generates code using modern stacks like React, Tailwind CSS, Node.js, and supports export for MERN/PERN projects.",
   },
   {
-    question: "Do you host sites?",
-    answer: "One-click hosting is available. You can also export and host anywhere you want.",
+    question: "Can I edit the generated code?",
+    answer: "Yes, you can download and customize the code locally or continue refining it within the platform.",
   },
   {
-    question: "Can I customize themes?",
-    answer: "You can tweak layouts, colors, and styles instantly—just update your prompt or edit the code.",
+    question: "Is prior coding experience required?",
+    answer: "No, it’s designed for both developers and non-developers to build sites quickly using simple prompts.",
   },
   {
-    question: "Is team collaboration supported?",
-    answer: "Yes, you can share drafts and collaborate before launching live.",
+    question: "How does deployment work?",
+    answer: "Deploy with one click on CodePup’s cloud or export the code to host on Vercel, Netlify, or your preferred platform.",
   },
   {
-    question: "Are my sites secure?",
-    answer: "All generated sites follow latest security best practices.",
+    question: "Does it support backend integration?",
+    answer: "Yes, it can generate Express APIs and connect to databases like MongoDB or PostgreSQL upon request.",
   },
   {
-    question: "Can I use my own domain?",
-    answer: "Custom domains are supported—connect, launch, and get online fast.",
+    question: "Can I use it for commercial projects?",
+    answer: "Absolutely—exported code is fully yours to use, modify, and deploy for clients or products.",
   },
   {
-    question: "Is it mobile responsive?",
-    answer: "Yes, every template and export is fully responsive for all devices.",
+    question: "Is mobile responsiveness guaranteed?",
+    answer: "Every generated site is responsive by default, optimized for mobile, tablet, and desktop views.",
   },
 ];
 
-// SVG arrow that spins when opened
 const ArrowIcon = ({ open }) => (
   <svg
     className={`transition-transform duration-300 ${open ? "rotate-90" : "rotate-0"}`}
@@ -61,7 +60,7 @@ export default function FaqSection() {
     <section className="w-full min-h-screen relative overflow-hidden bg-[#182337] bg-gradient-to-b from-[#182337] to-[#274664] flex flex-col justify-center">
       <div className="max-w-7xl mx-auto py-16 px-4">
         <h2 className="text-center text-4xl md:text-5xl font-bold mb-12 text-cyan-300 drop-shadow-lg">
-          Clear Your Doubts
+          Frequently Asked Questions
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {faqs.map((item, i) => (
